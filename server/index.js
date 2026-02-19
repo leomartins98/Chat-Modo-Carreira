@@ -235,13 +235,16 @@ ESTRUTURA OBRIGATÓRIA (SEM ALTERAR CHAVES)
 ],
 "squadPillars": [
 {
-"role": "THE STAR|THE WONDERKID|THE VETERAN|THE ENGINE|THE CAPTAIN",
-"name": "Jogador Real",
+"role": "THE STAR|THE ICON|THE LOYAL|THE ACADEMY|THE ENGINE|THE WONDERKID|THE CAPTAIN",
+"name": "Jogador Real do Elenco Atual",
 "age": 27,
-"position": "PD",
+"position": "POS",
 "overall": 86,
-"highlight": "8.0",
-"highlightLabel": "NOTA AVG"
+"yearsAtClub": 5,
+"clubSince": 2020,
+"highlight": "8.1",
+"highlightLabel": "NOTA AVG|GOL/JOGO|TEMPORADAS|ANOS BASE|TITULAR%",
+"context": "1 frase específica que explique a importância desse jogador ALÉM das estatísticas: é ídolo da torcida? veio da base? está há X anos? é o motor tático? cobre múltiplas funções?"
 }
 ],
 "transferPhilosophy": [
@@ -297,6 +300,25 @@ Participação continental
 Vendas recentes
 
 Dívidas conhecidas
+
+🧩 PILARES DO ELENCO (squadPillars) — REGRA CRÍTICA
+
+O objetivo desta seção é mostrar ao gestor quem são os jogadores INTOCÁVEIS ou FUNDAMENTAIS do clube — não necessariamente os melhores em OVR, mas aqueles que o gestor PRECISA conhecer antes de qualquer decisão.
+
+Inclua exatamente 6 jogadores com os seguintes critérios de seleção:
+
+• THE STAR — O melhor jogador atual do plantel em nível técnico. Pode ter chegado recentemente.
+• THE ICON — Ídolo identificado com o clube. Pode ter vindo da base ou estar há muitos anos. A torcida não perdoa se você vendê-lo.
+• THE LOYAL — O jogador com mais tempo contínuo no clube. Mesmo que não seja o melhor, é o mais antigo do elenco ativo. Mostre quantos anos está lá.
+• THE ACADEMY — Produto da base/canteira do clube. Formado internamente. Pode ser jovem ou veterano.
+• THE ENGINE — O jogador mais importante taticamente no dia a dia. Pode ser invisível para o público mas é o pulmão da equipe.
+• THE WONDERKID — O maior potencial jovem do elenco. Sub-23 preferencialmente. Ainda não é titular incontestável.
+
+Regras obrigatórias:
+1. Nunca repita o mesmo jogador em dois roles.
+2. "yearsAtClub" deve ser o número real de temporadas completas no clube.
+3. "context" DEVE ser específico — cite tempo, origem, relação com a torcida, função real. Nunca genérico. Errado: "Jogador importante para o clube." Certo: "Chegou aos 16 anos da academia rival, é capitão desde 2021 e a torcida o considera herói da virada do campeonato de 2022."
+4. "highlightLabel" deve ser o indicador MAS RELEVANTE para aquele role específico: NOTA AVG para THE ENGINE, GOL/JOGO para atacante STAR, TEMPORADAS para THE LOYAL, ANOS BASE para THE ACADEMY, etc.
 
 Scouting deve considerar:
 
