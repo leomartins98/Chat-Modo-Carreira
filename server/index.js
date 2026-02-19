@@ -424,16 +424,12 @@ app.post('/api/scout', authMiddleware, async (req, res) => {
       contents: `Gere um dossiê completo de modo carreira para o clube de futebol: "${clubName}". Siga a estrutura JSON exatamente como especificado. Todos os textos descritivos devem estar em português do Brasil.`,
       config: {
         systemInstruction: SYSTEM_PROMPT,
-        temperature: 0.7,
+        temperature: 0.9,
+        responseMimeType: 'application/json',
       },
     });
 
-    let text = response.text.trim();
-    // Limpar possíveis markdown fences
-    if (text.startsWith('```')) {
-      text = text.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
-    }
-
+    const text = response.text.trim();
     const data = JSON.parse(text);
 
     // Salvar no banco de dados
