@@ -1,0 +1,14 @@
+{
+  "name": "clean-analyst",
+  "version": "1.0.0",
+  "description": "Clean Analyst - Football Club Scouting & Dossier Tool",
+  "scripts": {
+    "start": "cd server && node index.js",
+    "dev": "concurrently \"cd server && node index.js\" \"cd client && npm run dev\"",
+    "build": "npm install && cd client && npm install && npm run build && cd ../server && npm install",
+    "install:all": "cd client && npm install && cd ../server && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
